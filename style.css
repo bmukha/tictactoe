@@ -1,8 +1,39 @@
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+header {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
 }
 
 body {
-    background-color: coral;
+  background-color: coral;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#board {
+  width: 50vh;
+  height: 50vh;
+  background-color: magenta;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-content: center;
+}
+
+
+.field {
+    display: flex;
+    border: 1px solid black;
+    margin: 0;
+    font-size: 5rem;
+    place-content: center;
 }
