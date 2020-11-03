@@ -3,30 +3,37 @@
   margin: 0 auto;
 }
 
-header {
+h1 {
   display: block;
+  grid-area: main;
   text-align: center;
   margin: 20px auto;
 }
 
 body {
   background-color: coral;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "aside main";
 }
 
-footer {
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-}
 
 #board {
-  width: 50vh;
-  height: 50vh;
+  grid-area: main;
+  width: 70vh;
+  height: 70vh;
   background-color: magenta;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   place-content: center;
+}
+
+#options {
+  grid-area: aside;
+  margin: 0;
+  background-color: mediumspringgreen;
+  height: 100vh;
 }
 
 
@@ -36,4 +43,10 @@ footer {
     margin: 0;
     font-size: 5rem;
     place-content: center;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  background-color: yellowgreen;
 }
