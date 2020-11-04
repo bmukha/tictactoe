@@ -17,7 +17,6 @@ body {
   grid-template-areas: "aside main";
 }
 
-
 #board {
   grid-area: main;
   width: 70vh;
@@ -36,17 +35,21 @@ body {
   height: 100vh;
 }
 
-
 .field {
-    display: flex;
-    border: 1px solid black;
-    margin: 0;
-    font-size: 5rem;
-    place-content: center;
+  display: flex;
+  border: 1px solid black;
+  margin: 0;
+  font-size: 5rem;
+  place-content: center;
 }
 
 .btn {
   width: 100%;
   height: 50px;
   background-color: yellowgreen;
+}
+
+input#p1name,
+input#p2name {
+  width: 100%;
 }
